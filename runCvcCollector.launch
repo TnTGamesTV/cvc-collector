@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/CvcCollector/src/main/java/launch/AddonLauncher.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="MOD_CLASSES" value=""/>
+        <mapEntry key="assetDirectory" value="C:\Users\finnt\.gradle\caches\forge_gradle\assets"/>
+        <mapEntry key="assetIndex" value="1.16"/>
+        <mapEntry key="nativesDirectory" value="D:\Dokumente\Anwendungsentwicklung\Labymod\CvcCollector\build\natives"/>
+        <mapEntry key="tweakClass" value="net.labymod.vanilla.LabyModTweaker"/>
+    </mapAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="launch.AddonLauncher"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="addon-example"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="CvcCollector"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DdebugMode=true -Daddonresources=addon.json"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="D:\Dokumente\Anwendungsentwicklung\Labymod\CvcCollector\run"/>
+</launchConfiguration>

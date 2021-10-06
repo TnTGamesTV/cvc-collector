@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "de.throwstnt.developing.cvc_collector.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "main.refmap.json",
+  "verbose": false,
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ExampleMixin"
+  ]
+}
