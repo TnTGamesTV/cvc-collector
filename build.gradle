@@ -34,7 +34,7 @@ def mcpVersion = [channel: 'snapshot', version: '20201028-1.16.3']
 
 mixin {
     defaultObfuscationEnv searge
-    add sourceSets.main, "example.refmap.json"
+    add sourceSets.main, "main.refmap.json"
 }
 
 minecraft {
@@ -64,7 +64,13 @@ minecraft {
     }
 }
 
+configurations {
+    embed
+    compile.extendsFrom(embed)
+}
+
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         name = "spongepowered"
@@ -74,7 +80,9 @@ repositories {
         name = 'impactdevelopment-repo'
         url = 'https://impactdevelopment.github.io/maven/'
     }
-    mavenLocal()
+    maven {
+        url = "https://repo.hypixel.net/repository/Hypixel/"
+    }
 }
 
 
@@ -83,17 +91,23 @@ dependencies {
 
     minecraft 'com.github.ImpactDevelopment:Vanilla:1.16.5'
     compile(files('libs/lm_api_mc1.16.5.jar'))
+    compile("org.mapdb:mapdb:3.0.8")
+    compile("net.hypixel:HypixelAPI:3.0.0")
+    compile("com.google.code.gson:gson:2.8.6")
 
     compile("org.ow2.asm:asm-analysis:6.2") { transitive = false }
     compile("org.ow2.asm:asm-util:6.2") { transitive = false }
     compile("org.ow2.asm:asm-commons:6.2") { transitive = false }
     compile("org.spongepowered:mixin:0.8.2") { transitive = false }
     compile("net.minecraft:launchwrapper:1.12") { transitive = false }
+    
 }
 
 jar {
     // Excludes the start file
     exclude("**/launch")
+    
+    from configurations.embed.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
 task downloadAPI(type: Download) {

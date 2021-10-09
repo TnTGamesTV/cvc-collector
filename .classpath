@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><classpath>
+  <classpathentry kind="output" path="bin/default"/>
   <classpathentry output="bin/main" kind="src" path="src/main/java">
     <attributes>
       <attribute name="gradle_scope" value="main"/>
@@ -27,9 +28,38 @@
       <attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="D:\Dokumente\Anwendungsentwicklung\Labymod\CvcCollector\build\natives"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="output" path="bin/default"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.mapdb/mapdb/3.0.8/1ce81fe1c1d59224ecb0e4e0b0f17cc0164dee1d/mapdb-3.0.8-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.mapdb/mapdb/3.0.8/bb4463359935727e3fb8485a7309b7b4cb99401a/mapdb-3.0.8.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/net.hypixel/HypixelAPI/3.0.0/5621ca8219390085aa90beecf51d729795d23d8a/HypixelAPI-3.0.0-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/net.hypixel/HypixelAPI/3.0.0/97f6b4f818d1309d2f9bb11a7f9e61560ca55d8b/HypixelAPI-3.0.0.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
   <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/forge_gradle/minecraft_user_repo/com/github/ImpactDevelopment/Vanilla/1.16.5_mapped_snapshot_20201028-1.16.3/Vanilla-1.16.5_mapped_snapshot_20201028-1.16.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/forge_gradle/minecraft_user_repo/com/github/ImpactDevelopment/Vanilla/1.16.5_mapped_snapshot_20201028-1.16.3/Vanilla-1.16.5_mapped_snapshot_20201028-1.16.3-recomp.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="lib" path="C:/Users/finnt/.gradle/caches/forge_gradle/minecraft_repo/versions/1.16.5/client-extra.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/56aaa69cfefc74d50051d6e46895a922f47ff22b/datafixerupper-4.0.26-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/ebd6690f33871ccee9b6132c6480668ee2e35020/datafixerupper-4.0.26.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.m2/repository/com/mojang/authlib/2.1.28/authlib-2.1.28-sources.jar" kind="lib" path="C:/Users/finnt/.m2/repository/com/mojang/authlib/2.1.28/authlib-2.1.28.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/1b9adea7bbe0b251818f42fde0bd2988d7e5f20a/gson-2.8.6-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
@@ -64,17 +94,57 @@
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="lib" path="C:/Users/finnt/.gradle/caches/forge_gradle/minecraft_repo/versions/1.16.5/client-extra.jar">
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/2e8041d08283cbbb58ad131617486fc6449f6c85/kotlin-stdlib-1.2.71-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/56aaa69cfefc74d50051d6e46895a922f47ff22b/datafixerupper-4.0.26-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/ebd6690f33871ccee9b6132c6480668ee2e35020/datafixerupper-4.0.26.jar">
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections-forkjoin/11.0.0.M3/12d8d12248f78b870de477cd285963c291fb300e/eclipse-collections-forkjoin-11.0.0.M3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections-forkjoin/11.0.0.M3/e2ce9d7ce74c919d7a9182cfd332e561be387004/eclipse-collections-forkjoin-11.0.0.M3.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/2.1.28/7385611cf8837615a31048ac555171313424867a/authlib-2.1.28-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/2.1.28/ad54da276bf59983d02d5ed16fc14541354c71fd/authlib-2.1.28.jar">
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections/11.0.0.M3/79e31c1a4940fe4deb29537600d002a08d8f0d97/eclipse-collections-11.0.0.M3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections/11.0.0.M3/726d8da19c65cf78d13a78dade925334e6946528/eclipse-collections-11.0.0.M3.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections-api/11.0.0.M3/5576c9ac71c6ed09c01090bce9e43266ac6ac820/eclipse-collections-api-11.0.0.M3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections-api/11.0.0.M3/9688c17d2a25938699e66484e281ce3831ff898d/eclipse-collections-api-11.0.0.M3.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/1.2.3/e3107ca512d704a434076a153a6e1149e3787275/patchy-1.2.3.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/772a37dd77417571e6f119a8d306f0c14c2ee410/text2speech-1.11.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/f378f889797edd7df8d32272c06ca80a1b6b0f58/text2speech-1.11.3.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/772a37dd77417571e6f119a8d306f0c14c2ee410/text2speech-1.11.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/c0b242c0091be5acbf303263c7eeeaedd70544c7/text2speech-1.11.3-natives-windows.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.m2/repository/com/google/guava/guava/21.0/guava-21.0-sources.jar" kind="lib" path="C:/Users/finnt/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/net.jpountz.lz4/lz4/1.3.0/31debfaa8a55bc4af1d4fe63a8ad0a2a7e851274/lz4-1.3.0-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/net.jpountz.lz4/lz4/1.3.0/c708bb2590c0652a642236ef45d9f99ff842a2ce/lz4-1.3.0.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.mapdb/elsa/3.0.0-M5/aaea162f6c70d60ba5f3ef5b985595bce9cb7a04/elsa-3.0.0-M5-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.mapdb/elsa/3.0.0-M5/d7c1920d084e741e04844f512af24012e745e809/elsa-3.0.0-M5.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.4/d2fcced21df0d50698cba6852f1507e324a888b4/httpclient-4.4-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.4/6d220441ca681dddc55a189eae81a437309128b8/httpclient-4.4.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
@@ -89,22 +159,32 @@
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/1.2.3/e3107ca512d704a434076a153a6e1149e3787275/patchy-1.2.3.jar">
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4/8ee918dfda1c6ae7a97b9c107bb26fd6771e4634/httpcore-4.4-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4/e9b3863fd9c8a273ceed4a7fae10f40bb10a2328/httpcore-4.4.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar">
+    <attributes>
+      <attribute name="gradle_used_by_scope" value="main,test"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:/Users/finnt/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar" kind="lib" path="C:/Users/finnt/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
   <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/1ec1ab1e6ac5a1572edfd0dd9ac95e83684b8a65/oshi-core-1.1-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/772a37dd77417571e6f119a8d306f0c14c2ee410/text2speech-1.11.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/f378f889797edd7df8d32272c06ca80a1b6b0f58/text2speech-1.11.3.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/772a37dd77417571e6f119a8d306f0c14c2ee410/text2speech-1.11.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/c0b242c0091be5acbf303263c7eeeaedd70544c7/text2speech-1.11.3-natives-windows.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
@@ -144,27 +224,12 @@
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/b9ed26b8c23fe7cd3e6b463b34e54e5c6d9536d5/guava-21.0-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/3a3d111be1be1b745edfa7d91678a12d7ed38709/guava-21.0.jar">
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/f7d878153e86a1cdddf6b37850e00a9f8bff726f/commons-lang3-3.5-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/caf033a4a7c37b4a8ff3ea084cba591539b0b69/commons-io-2.5-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/65cba03c4f6207f2885f88206fcf52c53f8d111b/httpclient-4.3.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/11fb3d88ae7e3b757d70237064210ceb954a5a04/commons-codec-1.10-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar">
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
@@ -179,12 +244,7 @@
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.17/36e6dccfa011566fb0c9314d50ecc5a1c0bb2d51/brigadier-1.0.17-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.17/c6b7dc51dd44379cc751b7504816006e9be4b1e6/brigadier-1.0.17.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar">
+  <classpathentry sourcepath="C:/Users/finnt/.m2/repository/com/mojang/brigadier/1.0.17/brigadier-1.0.17-sources.jar" kind="lib" path="C:/Users/finnt/.m2/repository/com/mojang/brigadier/1.0.17/brigadier-1.0.17.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
@@ -194,27 +254,17 @@
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/4809f38359edeea9487f747e09aa58ec8d3a54c5/httpcore-4.3.2-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar">
-    <attributes>
-      <attribute name="gradle_used_by_scope" value="main,test"/>
-    </attributes>
-  </classpathentry>
   <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.2.1/47e3859e2123a05a82e75b34af52719f2c18860c/fastutil-8.2.1-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.2.1/5ad88f325e424f8dbc2be5459e21ea5cab3864e9/fastutil-8.2.1.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.1/a0a7f683da620c345b502fff04d1e46cde2e8d9/log4j-core-2.8.1-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.1/4ac28ff2f1ddf05dae3043a190451e8c46b73c31/log4j-core-2.8.1.jar">
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.1/a5edb6b8c77843c8be98e0cb1f875699e76ee122/log4j-api-2.8.1-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.1/e801d13612e22cad62a3f4f3fe7fdbe6334a8e72/log4j-api-2.8.1.jar">
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
@@ -294,7 +344,7 @@
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.2/a33643c3e25428a77c737a4f5bf8b4afc28b9767/asm-6.2-sources.jar" kind="lib" path="C:/Users/finnt/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.2/1b6c4ff09ce03f3052429139c2a68e295cae6604/asm-6.2.jar">
+  <classpathentry kind="lib" path="C:/Users/finnt/.m2/repository/org/ow2/asm/asm/6.2/asm-6.2.jar">
     <attributes>
       <attribute name="gradle_used_by_scope" value="main,test"/>
     </attributes>
