@@ -10,6 +10,7 @@ import de.throwstnt.developing.cvc_collector.events.IncomingPacketListener;
 import de.throwstnt.developing.cvc_collector.events.LoginServerListener;
 import de.throwstnt.developing.cvc_collector.events.PayloadMessageListener;
 import de.throwstnt.developing.cvc_collector.manager.CvcPlayerManager;
+import de.throwstnt.developing.cvc_collector.manager.RoundManager;
 import de.throwstnt.developing.cvc_collector.manager.UUIDManager;
 import de.throwstnt.developing.cvc_collector.manager.data.detector.MapDetector;
 import de.throwstnt.developing.cvc_collector.module.LocationEntryCountModule;
@@ -41,6 +42,8 @@ public class CvcCollector extends LabyModAddon {
 
     private Timer timer;
     private TimerTask checkStateTask;
+
+    private TimerTask updateLocationEntryCounterTask;
 
     public static CvcCollector getInstance() {
         return instance;
@@ -79,6 +82,17 @@ public class CvcCollector extends LabyModAddon {
         this.timer = new Timer("CvcCollector-Timer");
         this.timer.schedule(checkStateTask, 500, 500);
 
+        this.timer.schedule(new TimerTask() {
+
+            @Override
+            public void run() {
+                if (RoundManager.getInstance().isRoundActive()) {
+                    DatabaseManager.getInstance().updateLocationEntryCounter();
+                }
+            }
+
+        }, 0, 500);
+
         StateManager.getInstance().register((oldState, newState) -> {
             if (State.isInGame(newState)) {
                 // fetch all players and create CvcPlayer's for them
@@ -91,6 +105,11 @@ public class CvcCollector extends LabyModAddon {
             ChatUtil.log("Updated state from " + oldState + " to " + newState);
             ChatUtil.sendChatMessage("Updated state from " + oldState + " to " + newState);
         });
+    }
+
+    @Override
+    public void onDisable() {
+        this.timer.cancel();
     }
 
     @Override
