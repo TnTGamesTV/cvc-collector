@@ -2,7 +2,6 @@ package de.throwstnt.developing.cvc_collector.module;
 
 import de.throwstnt.developing.cvc_collector.CvcCollector;
 import de.throwstnt.developing.cvc_collector.db.DatabaseManager;
-import de.throwstnt.developing.cvc_collector.manager.RoundManager;
 import net.labymod.ingamegui.ModuleCategory;
 import net.labymod.ingamegui.moduletypes.SimpleModule;
 import net.labymod.settings.elements.ControlElement;
@@ -23,11 +22,6 @@ public class LocationEntryCountModule extends SimpleModule {
     @Override
     public String getDefaultValue() {
         return "-";
-    }
-
-    @Override
-    public boolean isShown() {
-        return RoundManager.getInstance().isRoundActive();
     }
 
     @Override
