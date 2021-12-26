@@ -5,9 +5,13 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 import com.google.common.collect.Lists;
 import com.mojang.authlib.GameProfile;
+import de.throwstnt.developing.cvc_collector.stats.api.UUIDCache;
 import net.minecraft.client.Minecraft;
 
 public class UUIDManager {
+
+    private static final UUID CONST_NICKED_UUID = UUID.randomUUID();
+    private static final int CONST_CACHE_TTL = 60 * 60;
 
     private static UUIDManager instance;
 
@@ -17,8 +21,43 @@ public class UUIDManager {
         return instance;
     }
 
-    private UUIDManager() {
+    private UUIDCache cache;
 
+    private UUIDManager() {
+        this.cache = new UUIDCache();
+    }
+
+    private UUID _get(String name) {
+        return Minecraft.getInstance().getConnection().getPlayerInfoMap().stream()
+                .map(playerInfo -> playerInfo.getGameProfile())
+                .filter(gameProfile -> gameProfile.getName().equals(name))
+                .map(gameProfile -> gameProfile.getId()).findFirst().orElse(null);
+    }
+
+    /**
+     * Get the uuid of a player
+     * 
+     * @param name the name of the player
+     * @return the uuid
+     */
+    public UUID get(String name) {
+        UUID cachedUUID = this.cache.get(name);
+
+        if (cachedUUID == null) {
+            UUID actualUUID = this._get(name);
+
+            if (actualUUID == null) {
+                this.cache.put(name, CONST_NICKED_UUID, CONST_CACHE_TTL);
+                return null;
+            } else {
+                this.cache.put(name, actualUUID, CONST_CACHE_TTL);
+                return actualUUID;
+            }
+        } else if (cachedUUID == CONST_NICKED_UUID) {
+            return null;
+        } else {
+            return cachedUUID;
+        }
     }
 
     public List<UUID> getUUIDList() {

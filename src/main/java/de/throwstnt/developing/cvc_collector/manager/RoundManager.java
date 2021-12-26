@@ -25,10 +25,7 @@ public class RoundManager {
 
         StateManager.getInstance().register((oldState, newState) -> {
             if (State.isInGame(oldState)) {
-                this.isRoundActive = false;
-                this.lastRoundStartAt = 0;
-
-                ChatUtil.log("Stopped the current round (reason: state-change)");
+                this.stopRoundAndGame();
             }
         });
     }
@@ -57,28 +54,42 @@ public class RoundManager {
     }
 
     public void stopRound() {
-        this.isRoundActive = false;
-        this.lastRoundStartAt = 0;
+        this._stopRound();
+        this._updatePlayerList();
+        this._saveData();
 
-        // update cvc player list
+        ChatUtil.log("Stopped the round (reason: win-or-loss)");
+    }
+
+    private void _updatePlayerList() {
         UUIDManager.getInstance().getUUIDList()
                 .forEach(uuid -> ChatUtil.log("Playing with: " + uuid));
 
         UUIDManager.getInstance().getUUIDList().forEach(CvcPlayerManager.getInstance()::get);
+    }
 
-        ChatUtil.log("Stopped the current round (reason: win-or-loss)");
+    private void _stopRound() {
+        this.isRoundActive = false;
+        this.lastRoundStartAt = 0;
+    }
 
+    private void _clearManagers() {
+        CvcPlayerManager.getInstance().remove();
+
+        DatabaseManager.getInstance().updateLocationEntryCounter();
+    }
+
+    private void _saveData() {
         ChatUtil.log("Committing " + DatabaseManager.getInstance().getCountSinceLastCommit()
                 + " entries to file system");
         DatabaseManager.getInstance().save();
     }
 
     public void stopRoundAndGame() {
-        this.isRoundActive = false;
-        this.lastRoundStartAt = 0;
+        this._stopRound();
+        this._saveData();
+        this._clearManagers();
 
-        CvcPlayerManager.getInstance().remove();
-
-        ChatUtil.log("Stopped the current round (reason: end-of-game)");
+        ChatUtil.log("Stopped the round (reason: end-of-game)");
     }
 }
