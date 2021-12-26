@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import de.throwstnt.developing.cvc_collector.manager.RecordingPacketManager;
+import de.throwstnt.developing.cvc_collector.db.PacketQueueManager;
 import de.throwstnt.developing.cvc_collector.manager.RoundManager;
 import de.throwstnt.developing.cvc_collector.util.SoundUtil;
 import net.minecraft.client.network.play.ClientPlayNetHandler;
@@ -19,8 +19,7 @@ public class NetworkPlayerMixin {
     @Inject(method = "handleEntityMovement", at = @At("TAIL"))
     public void handleEntityMovement(SEntityPacket packetIn, CallbackInfo info) {
         if (RoundManager.getInstance().isRoundActive()) {
-            new Thread(() -> RecordingPacketManager.getInstance().handleMovePacket(packetIn))
-                    .start();
+            PacketQueueManager.getInstance().queue(packetIn);
         }
     }
 
