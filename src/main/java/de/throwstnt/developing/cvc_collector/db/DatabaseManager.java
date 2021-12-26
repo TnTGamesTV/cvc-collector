@@ -6,7 +6,6 @@ import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import org.mapdb.HTreeMap;
 import org.mapdb.Serializer;
-import de.throwstnt.developing.cvc_collector.DebouncedRunnable;
 import de.throwstnt.developing.cvc_collector.db.data.MovementEntry;
 import de.throwstnt.developing.cvc_collector.db.data.PlayerEntry;
 import de.throwstnt.developing.cvc_collector.db.data.serializer.MovementEntrySerializer;
@@ -28,21 +27,15 @@ public class DatabaseManager {
 
     private DB db;
 
-    private long counterLastCommit;
+    private long counterLastCommit = 0;
     private long counterSinceLastCommitCalculated;
 
     private HTreeMap<String, MovementEntry> locationMap;
-
-    private DebouncedRunnable counterLastCommitDebounced;
 
     private HTreeMap<String, PlayerEntry> playerMap;
 
     @SuppressWarnings("resource")
     public DatabaseManager() {
-        this.counterLastCommitDebounced = new DebouncedRunnable(() -> {
-            DatabaseManager.this.counterSinceLastCommitCalculated =
-                    this.locationMap.sizeLong() - this.counterLastCommit;
-        }, "counterLastCommit", 500);
         Path databaseFolder =
                 Minecraft.getInstance().gameDir.toPath().resolve("/CvC-Collector").normalize();
 
@@ -62,6 +55,8 @@ public class DatabaseManager {
                 .counterEnable().createOrOpen();
 
         this.db.getStore().fileLoad();
+
+        this.counterLastCommit = this.locationMap.sizeLong();
     }
 
     public File getDbFile() {
@@ -80,8 +75,12 @@ public class DatabaseManager {
         return playerMap;
     }
 
+    public void updateLocationEntryCounter() {
+        this.counterSinceLastCommitCalculated =
+                this.locationMap.sizeLong() - this.counterLastCommit;
+    }
+
     public long getCountSinceLastCommit() {
-        this.counterLastCommitDebounced.run();
         return this.counterSinceLastCommitCalculated;
     }
 
